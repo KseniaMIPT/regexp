@@ -9,14 +9,14 @@
 # aZZc  ---> a!Z!!Z!c
 # aBaCa ---> a!B!a!C!a
 REGEXP_1 = ''   # регулярное выражение
-REGEXP_1_REPL = '' # выражение для строки замены
+REGEXP_1_REPL = '!' # выражение для строки замены
 
 # abc    ---> abc
 # abbc   ---> abc
 # azzzc  ---> azc
 # arrrrc ---> arc
 # xxxxxx ---> x
-REGEXP_2 = '' 
+REGEXP_2 = '.+'
 REGEXP_2_REPL = ''
 
 # this is text         ---> this is text
@@ -24,7 +24,7 @@ REGEXP_2_REPL = ''
 # this is is is text   ---> this *is* text
 # this is text text    ---> this is *text*
 # this is is text text ---> this *is* *text*
-REGEXP_3 = '' 
+REGEXP_3 = ''
 REGEXP_3_REPL = ''
 
 # one two three ---> two one three
